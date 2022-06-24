@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="splash-screen">
+        <button id="start-game">Start Game</button>
+    </div>
+
+    <div class="win-screen">
+        <h1>Congratulations!!!</h1>
+        <button class="play-again">Play Again</button>
+    </div>
+
+    <div class="lose-screen">
+        <h1>Game Over</h1>
+        <button class="play-again">Play Again</button>
+    </div>
+
+    <div class="info">
+        <div class="name">
+            Hello: <span id="name"></span>
+        </div>
+        <div class="timer">
+            <span id="timer"></span>s
+        </div>
+        <div class="tries">
+            Wrong tries: <span id="tries">0</span>
+        </div>
+    </div>
+
+    <div class="game-container"></div>
+
+    <div id="leader-board">
+        <table></table>
+    </div>
+
+    <audio id="win" src="audio/win.wav" preload="auto"></audio>
+    <audio id="lose" src="audio/lose.wav" preload="auto"></audio>
+    <audio id="bg-music" src="audio/bg-music.mp3" preload="auto" loop></audio>
+    <script src="app.js"></script>
+</body>
+</html>
